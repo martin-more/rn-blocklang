@@ -20,7 +20,7 @@ export default class SideMenuDrawer extends Component {
         content={<SideMenu />}
         tapToClose={true}
         type="overlay"
-        openDrawerOffset={0.3}
+        openDrawerOffset={0.6}
         onCloseStart={() => Keyboard.dismiss()}>
           {this.props.children}
       </Drawer>
@@ -34,5 +34,4 @@ export default class SideMenuDrawer extends Component {
   open() {
     this._drawer.open();
   }
-
 }

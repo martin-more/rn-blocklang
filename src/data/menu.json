@@ -3,56 +3,78 @@
 		{
 			"id": 1,
 			"title": "Repeat",
+			"input": "10",
+			"type": "loop",
 			"subMenu": []
 		},
 		{
 			"id": 2,
 			"title": "Left",
+			"symbol": "degress",
+			"input": "10",
+			"type": "secu",
 			"subMenu": []
 		},
 		{
 			"id": 3,
 			"title": "Right",
+			"symbol": "degress",
+			"input": "10",
+			"type": "secu",
 			"subMenu": []
 		},
 		{
 			"id": 4,
 			"title": "Forward",
+			"symbol": "steps",
+			"input": "10",
+			"type": "secu",
 			"subMenu": []
 		},
 		{
 			"id": 5,
 			"title": "Back",
+			"symbol": "steps",
+			"input": "10",
+			"type": "secu",
 			"subMenu": []
 		},
 		{
 			"id": 6,
 			"title": "Circle",
+			"symbol": "radius",
+			"input": "10",
+			"type": "secu",
 			"subMenu": []
 		},
 		{
 			"id": 7,
 			"title": "Pen Up",
+			"type": "secu",
 			"subMenu": []
 		},
 		{
 			"id": 8,
 			"title": "Pen Down",
+			"type": "secu",
 			"subMenu": []
 		},
 		{
 			"id": 9,
 			"title": "Back to center",
+			"type": "secu",
 			"subMenu": []
 		},
 		{
 			"id": 10,
 			"title": "Hide Figure",
+			"type": "secu",
 			"subMenu": []
 		},
 		{
 			"id": 11,
 			"title": "Show Figure",
+			"type": "secu",
 			"subMenu": []
 		}
 	],

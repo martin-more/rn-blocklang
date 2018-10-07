@@ -10,6 +10,7 @@ import { Actions } from 'react-native-router-flux';
 
 // Our custom files and classes import
 import Text from './Text';
+import Block from './Block';
 
 // Dump Data - Menu
 import { menuItems } from '../data/menu.json';
@@ -55,8 +56,6 @@ export default class SideMenu extends Component {
             {this.renderMenuItems()}
           </List>
         </View>
-      {/* --- Main MENU end --- */}
-        <View style={styles.line} />
       </View>
     );
   }
@@ -66,14 +65,15 @@ export default class SideMenu extends Component {
     menuItems.map((item, i) => {
       items.push(
         <ListItem
+          style={{ height: 60 }}
           last={menuItems.length === i+1}
           icon
           key={item.id}
           button={true}
           onPress={() => this.itemClicked(item)}>
-          <Body>
-            <Text>{item.title}</Text>
-          </Body>
+          
+            <Block title="myTitle" item={item} />
+          
         </ListItem>
       );
     });
@@ -96,7 +96,7 @@ export default class SideMenu extends Component {
 const styles = {
   container: {
     flex: 1,
-    backgroundColor: '#fdfdfd'
+    backgroundColor: '#ffdab9'
   },
   line: {
     width: '100%',
