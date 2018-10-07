@@ -1,0 +1,60 @@
+{
+	"menuItems": [
+		{
+			"id": 1,
+			"title": "Repeat",
+			"subMenu": []
+		},
+		{
+			"id": 2,
+			"title": "Left",
+			"subMenu": []
+		},
+		{
+			"id": 3,
+			"title": "Right",
+			"subMenu": []
+		},
+		{
+			"id": 4,
+			"title": "Forward",
+			"subMenu": []
+		},
+		{
+			"id": 5,
+			"title": "Back",
+			"subMenu": []
+		},
+		{
+			"id": 6,
+			"title": "Circle",
+			"subMenu": []
+		},
+		{
+			"id": 7,
+			"title": "Pen Up",
+			"subMenu": []
+		},
+		{
+			"id": 8,
+			"title": "Pen Down",
+			"subMenu": []
+		},
+		{
+			"id": 9,
+			"title": "Back to center",
+			"subMenu": []
+		},
+		{
+			"id": 10,
+			"title": "Hide Figure",
+			"subMenu": []
+		},
+		{
+			"id": 11,
+			"title": "Show Figure",
+			"subMenu": []
+		}
+	],
+
+}
