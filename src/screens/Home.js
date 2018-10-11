@@ -16,19 +16,28 @@ import {
 import { Actions } from 'react-native-router-flux';
 
 // Our custom files and classes import
-import Text from '../components/Text';
-import Navbar from '../components/Navbar';
-import SideMenu from '../components/SideMenu';
-import SideMenuDrawer from '../components/SideMenuDrawer';
+import Text from '../components/common/Text';
+import Navbar from '../components/common/Navbar';
+import SideMenuDrawer from '../components/common/SideMenuDrawer';
+
+import MenuColumn   from '../components/blocklang/MenuColumn';
+import ScriptColumn from '../components/blocklang/ScriptColumn';
+import CanvasColumn from '../components/blocklang/CanvasColumn';
+
+import Dim from '../Dim';
 
 // Our const
-const FULL_WIDTH = Dimensions.get('window').width;
-const FULL_HEIGHT = Dimensions.get('window').height;
 // Natibase header height (https://github.com/GeekyAnts/NativeBase/blob/master/src/theme/variables/platform.js#L153)
-const HEADER_HEIGHT = (Platform.OS === 'ios' ? 64 : 56) + 24
+import { menuItems } from '../data/menu.json';
 
+// Our variables
 
 export default class Home extends Component {
+
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     var left = (
       <Left style={{flex:1}}>
@@ -39,42 +48,39 @@ export default class Home extends Component {
     );
     var right = (
       <Right style={{flex:1}}>
-    {/*
-        <Button onPress={() => Actions.search()} transparent>
-          <Icon name='ios-search-outline' />
-        </Button>
-    */}
       </Right>
     );
     return(
       <SideMenuDrawer ref={(ref) => this._sideMenuDrawer = ref}>
-          <Container>
-            <Navbar left={left} right={right} title="Blocklang" />
+          <Navbar left={left} right={right} title="Blocklang" />
+          <Container style={styles.container}>
             
-            <View style={styles.container}>
-              
-              <ScrollView contentContainerStyle={styles.scriptColumn}>
+
+              <ScrollView contentContainerStyle={styles.menuColumn}>
+                <Text style={{textAlign: 'center'}}>Menu</Text>
+                <View style={{flex: 1}}>
+                  <MenuColumn  />
+                </View>
               </ScrollView>
 
-              <View style={styles.canvasColumn}>
-                <Image
-                  style={styles.canvasColumn}
-                  source={require('../assets/logo.png')}
-                />
-              </View>
+              <ScrollView contentContainerStyle={styles.scriptColumn}>
+                <Text style={{textAlign: 'center'}}>Script</Text>
+                <View style={{flex: 1}}>
+                  <ScriptColumn />
+                </View>
+              </ScrollView>
 
-            </View>
+              <ScrollView contentContainerStyle={styles.canvasColumn}>
+                <Text style={{textAlign: 'center'}}>Result</Text>
+                <View style={{flex: 1}}>
+                  <CanvasColumn />
+                </View>
+              </ScrollView>
+
+         
           </Container>
       </SideMenuDrawer>
     );
-  }
-  
-  renderScriptColumn() {
-    
-  }
-
-  renderCanvasColumn() {
-
   }
 }
 
@@ -84,16 +90,18 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: 'red'
   },
+  menuColumn: {
+    ...Dim.menuColumn,
+    backgroundColor: '#ffdab9'
+  },
 
   scriptColumn: {
-    height: FULL_HEIGHT - HEADER_HEIGHT,
-    width: FULL_WIDTH / 2,
+    ...Dim.scriptColumn,
     backgroundColor: '#b0c4de'
   },
 
   canvasColumn: {
-    height: FULL_HEIGHT - HEADER_HEIGHT,
-    width: FULL_WIDTH / 2,
-    backgroundColor: '#e8e8e8'
+    ...Dim.canvasColumn,
+    backgroundColor: '#ffffff'
   }
 });

@@ -10,11 +10,9 @@ import { Actions } from 'react-native-router-flux';
 
 // Our custom files and classes import
 import Text from './Text';
-import Block from './Block';
 
 // Dump Data - Menu
-import { menuItems } from '../data/menu.json';
-
+// import { menuItems } from '../../data/menu.json';
 
 export default class SideMenu extends Component {
   constructor(props) {
@@ -62,7 +60,7 @@ export default class SideMenu extends Component {
 
   renderMenuItems() {
     let items = [];
-    menuItems.map((item, i) => {
+    /*menuItems.map((item, i) => {
       items.push(
         <ListItem
           style={{ height: 60 }}
@@ -76,7 +74,7 @@ export default class SideMenu extends Component {
           
         </ListItem>
       );
-    });
+    });*/
     return items;
   }
 

@@ -11,7 +11,6 @@ import Drawer from 'react-native-drawer';
 // Our custom files and classes import
 import SideMenu from './SideMenu';
 
-
 export default class SideMenuDrawer extends Component {
   render() {
     return(

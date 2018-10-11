@@ -8,12 +8,13 @@
   },
   "dependencies": {
     "lodash": "^4.17.11",
-    "react": "16.5.0",
     "native-base": "^2.8.0",
+    "react": "16.5.0",
     "react-native": "0.57.2",
-    "react-native-sortable-grid": "^2.0.0",
+    "react-native-canvas": "^0.1.24",
+    "react-native-drawer": "^2.5.0",
     "react-native-router-flux": "^4.0.4",
-    "react-native-drawer": "^2.5.0"
+    "react-native-sortable-grid": "^2.0.0"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",

@@ -1,7 +1,3 @@
-/**
-* This is the category component used in home page
-**/
-
 // React native and others libraries imports
 import React, { Component } from 'react';
 import { Image, Dimensions, TouchableOpacity, TextInput } from 'react-native';
