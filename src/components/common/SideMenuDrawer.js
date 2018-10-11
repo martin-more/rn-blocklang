@@ -11,7 +11,6 @@ import Drawer from 'react-native-drawer';
 // Our custom files and classes import
 import SideMenu from './SideMenu';
 
-
 export default class SideMenuDrawer extends Component {
   render() {
     return(
@@ -20,7 +19,7 @@ export default class SideMenuDrawer extends Component {
         content={<SideMenu />}
         tapToClose={true}
         type="overlay"
-        openDrawerOffset={0.3}
+        openDrawerOffset={0.6}
         onCloseStart={() => Keyboard.dismiss()}>
           {this.props.children}
       </Drawer>
@@ -34,5 +33,4 @@ export default class SideMenuDrawer extends Component {
   open() {
     this._drawer.open();
   }
-
 }

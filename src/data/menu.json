@@ -2,57 +2,80 @@
 	"menuItems": [
 		{
 			"id": 1,
-			"title": "Repeat",
+			"name": "Repeat",
+			"units": [],
+			"value": "10",
+			"type": "loop",
 			"subMenu": []
 		},
 		{
 			"id": 2,
-			"title": "Left",
+			"name": "Left",
+			"units": "degrees",
+			"value": "5",
+			"type": "draw",
 			"subMenu": []
 		},
 		{
 			"id": 3,
-			"title": "Right",
+			"name": "Right",
+			"units": "degrees",
+			"value": "5",
+			"type": "draw",
 			"subMenu": []
 		},
 		{
 			"id": 4,
-			"title": "Forward",
+			"name": "Forward",
+			"units": "steps",
+			"value": "10",
+			"type": "draw",
 			"subMenu": []
 		},
 		{
 			"id": 5,
-			"title": "Back",
+			"name": "Back",
+			"units": "steps",
+			"value": "10",
+			"type": "draw",
 			"subMenu": []
 		},
 		{
 			"id": 6,
-			"title": "Circle",
+			"name": "Circle",
+			"units": "radius",
+			"value": "20",
+			"type": "draw",
 			"subMenu": []
 		},
 		{
 			"id": 7,
-			"title": "Pen Up",
+			"name": "Pen Up",
+			"type": "action",
 			"subMenu": []
 		},
 		{
 			"id": 8,
-			"title": "Pen Down",
+			"name": "Pen Down",
+			"type": "action",
 			"subMenu": []
 		},
 		{
 			"id": 9,
-			"title": "Back to center",
+			"name": "Back to center",
+			"type": "action",
 			"subMenu": []
 		},
 		{
 			"id": 10,
-			"title": "Hide Figure",
+			"name": "Hide Figure",
+			"type": "action",
 			"subMenu": []
 		},
 		{
 			"id": 11,
-			"title": "Show Figure",
+			"name": "Show Figure",
+			"type": "action",
 			"subMenu": []
 		}
 	],

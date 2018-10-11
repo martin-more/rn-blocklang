@@ -20,8 +20,8 @@ export default class Main extends Component {
       <Root>
         <Router>
           <Scene key="root">
-            <Scene initial key="welcome" component={Welcome} hideNavBar />
-            <Scene key="home" component={Home} modal hideNavBar />
+            <Scene key="welcome" component={Welcome} hideNavBar />
+            <Scene initial key="home" component={Home} modal hideNavBar />
           </Scene>
         </Router>
       </Root>
